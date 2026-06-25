@@ -4,9 +4,9 @@ const outfits = {
     sport: ["Running shorts + tank top", "Leggings + sports bra", "Track suit"]
 };
 
-function getOutfits(category) {
+function getOutfits(category, btn) {
     document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-    event.target.classList.add('active');
+    btn.classList.add('active');
 
     document.getElementById('results').style.display = 'none';
     document.getElementById('error').style.display = 'none';
